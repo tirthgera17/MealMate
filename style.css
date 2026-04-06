@@ -131,3 +131,10 @@ p {
     font-size: 1.5rem;
   }
 }
+button {
+  margin-top: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
