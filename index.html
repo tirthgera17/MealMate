@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealMate</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Logo / Header -->
+  <div class="logo">MealMate 🍽️</div>
+
+  <h1>Welcome to MealMate</h1>
+  <p>Discover delicious recipes from around the world.</p>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search recipes..." />
+    
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Seafood">Seafood</option>
+      <option value="Dessert">Dessert</option>
+    </select>
+
+    <button onclick="searchMeals()">Search</button>
+  </section>
+
+  <!-- Recipe Section -->
+  <section class="recipe-section">
+    <h2 class="section-title">Recipes</h2>
+    <div id="recipeContainer" class="flex"></div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
