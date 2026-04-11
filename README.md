@@ -30,3 +30,6 @@ https://www.themealdb.com/api.php
 1. Clone the repository  
 2. Open index.html in your browser  
 3. Start exploring recipes!
+
+## 🚀 Live Demo
+https://tirthgera17.github.io/MealMate/
