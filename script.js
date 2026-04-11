@@ -1,11 +1,11 @@
 const container = document.getElementById("recipeContainer");
 
-let allMeals = []; // store data globally
+let allMeals = [];
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 // Load default meals
 window.onload = () => {
-  fetchMeals("chicken");
+  fetchMeals("soup");
 };
 
 // Fetch API
@@ -55,17 +55,6 @@ function searchMeals() {
   const input = document.getElementById("searchInput").value;
   fetchMeals(input);
 }
-
-// FILTER (uses filter)
-document.getElementById("categoryFilter").addEventListener("change", () => {
-  const category = document.getElementById("categoryFilter").value;
-
-  const filtered = category
-    ? allMeals.filter(meal => meal.strCategory === category)
-    : allMeals;
-
-  displayMeals(filtered);
-});
 
 // SORT (uses sort)
 document.getElementById("sortOption").addEventListener("change", () => {
